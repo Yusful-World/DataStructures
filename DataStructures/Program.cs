@@ -16,9 +16,10 @@ namespace DataStructures
             numbers.Insert(9);
             numbers.Insert(10);
 
-            numbers.RemoveAt(10);
+            Console.WriteLine(numbers.IndexOf(10));
+            //numbers.RemoveAt(10);
 
-            numbers.Print();
+            //numbers.Print();
         }
 
     }
