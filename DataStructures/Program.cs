@@ -2,27 +2,19 @@
 
 namespace DataStructures
 {
-    public class Array
-    {
-        private readonly int[] items;
-        private int count;
-        public Array(int length)
-        {
-            items = new int[length];
-        }
-
-        public void Print()
-        {
-            for (int i = 0; i < count; i++)
-                Console.WriteLine(items[i]);
-        }
-    }
-
     public class Program
     {
         public static void Main(string[] args)
         {
             Array numbers = new Array(5);
+            numbers.Insert(3);
+            numbers.Insert(4);
+            numbers.Insert(5);
+            numbers.Insert(6);
+            numbers.Insert(7);
+            numbers.Insert(8);
+            numbers.Insert(9);
+            numbers.Insert(10);
             numbers.Print();
         }
 
