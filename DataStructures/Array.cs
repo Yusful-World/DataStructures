@@ -1,4 +1,7 @@
-﻿namespace DataStructures
+﻿using System.Collections;
+using System.Numerics;
+
+namespace DataStructures
 {
     public class Array
     {
@@ -48,6 +51,30 @@
         {
             for (int i = 0; i < count; i++)
                 Console.WriteLine(items[i]);
+        }
+
+        public void DynamicArrays()
+        {
+            Vector<int> vector = new Vector<int>();
+
+
+            int[] c = { 7, 8, 9 };
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(1);
+            arrayList.Add(2);
+            arrayList.Add(3);
+            arrayList.Insert(1, 4);
+
+            arrayList.InsertRange(2, c);
+
+            arrayList.Remove(1);
+            arrayList.RemoveAt(0);
+
+
+            foreach (int item in arrayList)
+                Console.WriteLine(item);
+
+            Console.WriteLine(arrayList.Count);
         }
     }
 }
