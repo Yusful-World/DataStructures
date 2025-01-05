@@ -21,10 +21,17 @@
                 items = newItems;
             }
 
-          
-
-
             items[count++] = item;
+        }
+
+        public void RemoveAt(int index)
+        {
+            if (index < 0 || index >= count)
+                throw new ArgumentOutOfRangeException("index", "index cannot be less than 0 or greater than size of array");
+
+            for (int i = index; i < count; i++)
+                items[i] = items[i + 1];
+            count--;
         }
 
         public void Print()

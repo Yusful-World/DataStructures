@@ -15,6 +15,9 @@ namespace DataStructures
             numbers.Insert(8);
             numbers.Insert(9);
             numbers.Insert(10);
+
+            numbers.RemoveAt(10);
+
             numbers.Print();
         }
 
